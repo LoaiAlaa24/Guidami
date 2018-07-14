@@ -9,13 +9,15 @@ import {
   Button,
   Icon,
   View,
+  Body,
+  Header,
   Text
 } from "native-base";
 import { Field, reduxForm } from "redux-form";
 import { setUser } from "../../actions/user";
 import styles from "./styles";
 
-const background = require("../../../images/shadow.png");
+const background = require("../../../images/mainlogo-01.png");
 
 const validate = values => {
   const error = {};
@@ -90,19 +92,33 @@ class Login extends Component {
     return (
       <Container>
         <View style={styles.container}>
+      <Header style={{height:200 ,backgroundColor: '#216083'}}>
+        <Body >
+        <Image source={background} 
+        style={styles.header}
+        />
+         </Body>
+   </Header>
+
           <Content>
-            <Image source={background} style={styles.shadow}>
-              <View style={styles.bg}>
-                <Field name="email" component={this.renderInput} />
+            
+          
+              <View style={styles.in}>
+          <Field name="email" component={this.renderInput}  />
+          </View>
+          
+       <View  style={styles.in}>
                 <Field name="password" component={this.renderInput} />
+                </View>
+                <View>
                 <Button
                   style={styles.btn}
                   onPress={() => this.props.navigation.navigate("Home")}
                 >
-                  <Text>yeah</Text>
+                  <Text>Login</Text>
                 </Button>
               </View>
-            </Image>
+            
           </Content>
         </View>
       </Container>
