@@ -26,7 +26,8 @@ export default {
 width:400,
 height:400,
 // resizeMode:"contain",
-alignSelf:"center"
+alignSelf:"center",
+borderBottomWidth:20
   },
   bg: {
     flex: 1,
@@ -45,8 +46,8 @@ backgroundColor:"#ffff",
 borderRadius:10,
 paddingLeft: 10,
 marginLeft:75,
-marginBottom:30
-
+marginBottom:30,
+marginTop:10
 
   },
   input: {
@@ -55,6 +56,7 @@ marginBottom:30
   btn: {
     marginTop: 20,
     alignSelf: 'center',
-    backgroundColor:"#FF851B"
+    backgroundColor:"#FF851B",
+    borderRadius:10,
   },
 };

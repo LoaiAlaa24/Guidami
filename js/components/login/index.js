@@ -9,6 +9,7 @@ import {
   Button,
   Icon,
   View,
+  ImageBackground,
   Body,
   Header,
   Text
@@ -18,7 +19,7 @@ import { setUser } from "../../actions/user";
 import styles from "./styles";
 
 const background = require("../../../images/mainlogo-01.png");
-
+// const backgroundImg = require("../../../images/backgrou");
 const validate = values => {
   const error = {};
   error.email = "";

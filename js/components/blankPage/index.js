@@ -5,15 +5,18 @@ import {
   Header,
   Title,
   Content,
+  View,
   Text,
   Button,
+  ImageBackground,
   Icon,
   Left,
   Right,
   Body
 } from "native-base";
-
+import { Image } from "react-native";
 import styles from "./styles";
+const backgroundImg = require("../../../images/couples-traveling.jpg");
 
 class BlankPage extends Component {
   static navigationOptions = {
@@ -31,7 +34,7 @@ class BlankPage extends Component {
     console.log(this.props.navigation, "000000000");
     return (
       <Container style={styles.container}>
-        <Header>
+        {/* <Header>
           <Left>
             <Button transparent onPress={() => this.props.navigation.goBack()}>
               <Icon name="ios-arrow-back" />
@@ -43,14 +46,23 @@ class BlankPage extends Component {
           </Body>
 
           <Right />
-        </Header>
+        </Header> */}
 
-        <Content padder>
-          <Text>
-            {this.props.navigation.state.params.name.item !== undefined
-              ? this.props.navigation.state.params.name.item
-              : "Create Something Awesome . . ."}
+        <Content>
+         <Image  source={backgroundImg} style={styles.im}/>
+         
+          <Text style={styles.tex}>
+                  Welcome to Guidami
           </Text>
+
+          <Button onPress={() => this.props.navigation.navigate("Login")} style={styles.btnSignIn} >
+          <Text>Sign in</Text>
+          </Button>
+
+          <Button onPress={() => this.props.navigation.navigate("Login")} style={styles.btnSignUp} >
+          <Text>Sign up</Text>
+          </Button>
+
         </Content>
       </Container>
     );
