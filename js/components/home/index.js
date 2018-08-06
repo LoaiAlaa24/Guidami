@@ -58,20 +58,14 @@ class Home extends Component {
           </Left>
 
           <Body>
-            <Title>Home</Title>
+           
           </Body>
 
           <Right>
             <Button
               transparent
               onPress={() => {
-                DrawerNav.dispatch(
-                  NavigationActions.reset({
-                    index: 0,
-                    actions: [NavigationActions.navigate({ routeName: "Home" })]
-                  })
-                );
-                DrawerNav.goBack();
+                DrawerNav.navigate("BlankPage2")
               }}
             >
               <Icon active name="ios-settings" />

@@ -13,7 +13,7 @@ import {
   Body
 } from "native-base";
 
-class BlankPage2 extends Component {
+class Register extends Component {
   static navigationOptions = {
     header: null
   };
@@ -44,7 +44,7 @@ class BlankPage2 extends Component {
 
         <Content padder>
           <Text>
-            Config goes here..
+            Register
           </Text>
         </Content>
       </Container>
@@ -52,4 +52,4 @@ class BlankPage2 extends Component {
   }
 }
 
-export default BlankPage2;
+export default Register;
