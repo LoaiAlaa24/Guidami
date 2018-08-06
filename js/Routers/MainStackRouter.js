@@ -5,6 +5,7 @@ import BlankPage from "../components/blankPage";
 import BlankPage2 from "../components/blankPage2";
 import ViewRequests from "../components/viewRequests";
 import RequestHistory from "../components/requestHistory";
+import RespondToRequests from "../components/respondToRequests";
 import Help from "../components/help";
 import Register from "../components/register";
 import NewTrip from "../components/newTrip";
@@ -24,5 +25,5 @@ export default (StackNav = StackNavigator({
   Help: { screen: Help },
   ViewRequests: { screen: ViewRequests },
   RequestHistory: { screen: RequestHistory },
-  
+  RespondToRequests:{ screen: RespondToRequests },
 }));

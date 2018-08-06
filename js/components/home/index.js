@@ -68,7 +68,7 @@ class Home extends Component {
                 DrawerNav.navigate("BlankPage2")
               }}
             >
-              <Icon active name="ios-settings" />
+              <Icon active name="account-settings" />
             </Button>
           </Right>
         </Header>
