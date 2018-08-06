@@ -29,7 +29,7 @@ class BlankPage2 extends Component {
           </Left>
 
           <Body>
-            <Title>Blank page</Title>
+           
           </Body>
 
           <Right>
@@ -44,7 +44,7 @@ class BlankPage2 extends Component {
 
         <Content padder>
           <Text>
-            Create Something Awesome . . .
+            Config goes here..
           </Text>
         </Content>
       </Container>
