@@ -4,6 +4,7 @@ import Home from "../components/home/";
 import BlankPage from "../components/blankPage";
 import BlankPage2 from "../components/blankPage2";
 import Register from "../components/register";
+import NewTrip from "../components/newTrip";
 import HomeDrawerRouter from "./HomeDrawerRouter";
 import { StackNavigator } from "react-navigation";
 import { Header, Left, Button, Icon, Body, Title, Right } from "native-base";
@@ -15,7 +16,7 @@ export default (StackNav = StackNavigator({
   Login: { screen: Login },
   Home: { screen: Home },
   BlankPage2: { screen: BlankPage2 },
-  
   Register: { screen: Register },
+  NewTrip: { screen: NewTrip },
   
 }));

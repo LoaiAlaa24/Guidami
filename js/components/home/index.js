@@ -77,7 +77,7 @@ class Home extends Component {
         <Image 
                source={backgroundImg} style={styles.im}/>
 
-          <Button onPress={() => this.props.navigation.navigate("Login")} style={styles.btnBookTrip} >
+          <Button onPress={() => this.props.navigation.navigate("NewTrip")} style={styles.btnBookTrip} >
           <Text>Book a Trip</Text>
           </Button>
           
