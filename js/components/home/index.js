@@ -14,13 +14,17 @@ import {
   Icon,
   Left,
   Body,
-  Right
+  Right,
+
 } from "native-base";
+import { Image } from "react-native";
 import { Grid, Row } from "react-native-easy-grid";
 
 import { setIndex } from "../../actions/list";
 import { openDrawer } from "../../actions/drawer";
 import styles from "./styles";
+
+const backgroundImg = require("../../../images/travelling_btm.jpg");
 
 class Home extends Component {
   static navigationOptions = {
@@ -75,21 +79,14 @@ class Home extends Component {
           </Right>
         </Header>
         <Content>
-          <Grid style={styles.mt}>
-            {this.props.list.map((item, i) => (
-              <Row key={i}>
-                <TouchableOpacity
-                  style={styles.row}
-                  onPress={() =>
-                    this.props.navigation.navigate("BlankPage", {
-                      name: { item }
-                    })}
-                >
-                  <Text style={styles.text}>{item}</Text>
-                </TouchableOpacity>
-              </Row>
-            ))}
-          </Grid>
+          
+        <Image 
+               source={backgroundImg} style={styles.im}/>
+
+          <Button onPress={() => this.props.navigation.navigate("Login")} style={styles.btnBookTrip} >
+          <Text>Book a Trip</Text>
+          </Button>
+          
         </Content>
       </Container>
     );

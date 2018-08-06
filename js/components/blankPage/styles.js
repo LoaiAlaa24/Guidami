@@ -1,20 +1,18 @@
 
 const React = require('react-native');
-
 const { StyleSheet , Dimensions } = React;
 const deviceHeight = Dimensions.get('window').height;
 export default{
   im:{
-
   width:"100%",
   marginLeft:0,
-  height:deviceHeight,
-
-
+  height:deviceHeight/1.01255555555,
+  overflow:"hidden"
   },
   container: {
     backgroundColor: '#FBFAFA',
-  },v:{
+  },
+  v:{
 
     position:"absolute"
 

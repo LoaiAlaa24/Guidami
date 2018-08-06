@@ -1,8 +1,20 @@
 
 const React = require('react-native');
 
-const { StyleSheet } = React;
+
+const { StyleSheet , Dimensions } = React;
+const deviceHeight = Dimensions.get('window').height;
 export default {
+  im:{
+    
+    width:"100%",
+    marginLeft:0,
+    height:deviceHeight,
+    position: "relative",
+    overflow:"hidden",
+
+
+    },
   container: {
     backgroundColor: '#FBFAFA',
   },
@@ -18,4 +30,14 @@ export default {
   mt: {
     marginTop: 18,
   },
+  btnBookTrip: {
+    justifyContent: 'center',
+    position:"absolute",
+    width:"50%",
+    zIndex:100,
+    marginLeft: 100,
+    backgroundColor:'#FF851B',
+    borderRadius:10,
+    marginTop:deviceHeight/1.5
+  }
 };

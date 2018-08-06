@@ -7,8 +7,7 @@ import {
   List,
   ListItem,
   Content,
-  Icon
-} from "native-base";
+  Icon} from "native-base";
 const routes = ["View requests", "View past requests"];
 export default class DrawBar extends React.Component {
   static navigationOptions = {
@@ -53,8 +52,7 @@ export default class DrawBar extends React.Component {
               return (
                 <ListItem
                   button
-                  onPress={() => this.props.navigation.navigate(data)}
-                >
+                  onPress={() => this.props.navigation.navigate(data)} >
                   <Text>{data}</Text>
                 </ListItem>
               );
