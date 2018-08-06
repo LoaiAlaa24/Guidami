@@ -47,17 +47,9 @@ class Home extends Component {
 
             <Button
               transparent
-              onPress={() => {
-                DrawerNav.dispatch(
-                  NavigationActions.reset({
-                    index: 0,
-                    actions: [NavigationActions.navigate({ routeName: "Home" })]
-                  })
-                );
-                DrawerNav.goBack();
-              }}
+              onPress={() => DrawerNav.navigate("DrawerOpen")}
             >
-              <Icon active name="power" />
+              <Icon active name="menu" />
             </Button>
           </Left>
 
@@ -68,9 +60,17 @@ class Home extends Component {
           <Right>
             <Button
               transparent
-              onPress={() => DrawerNav.navigate("DrawerOpen")}
+              onPress={() => {
+                DrawerNav.dispatch(
+                  NavigationActions.reset({
+                    index: 0,
+                    actions: [NavigationActions.navigate({ routeName: "Home" })]
+                  })
+                );
+                DrawerNav.goBack();
+              }}
             >
-              <Icon active name="menu" />
+              <Icon active name="ios-settings" />
             </Button>
           </Right>
         </Header>
