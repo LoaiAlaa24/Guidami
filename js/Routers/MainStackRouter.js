@@ -3,6 +3,8 @@ import Login from "../components/login/";
 import Home from "../components/home/";
 import BlankPage from "../components/blankPage";
 import BlankPage2 from "../components/blankPage2";
+import ViewRequests from "../components/viewRequests";
+import Help from "../components/help";
 import Register from "../components/register";
 import NewTrip from "../components/newTrip";
 import HomeDrawerRouter from "./HomeDrawerRouter";
@@ -18,5 +20,7 @@ export default (StackNav = StackNavigator({
   BlankPage2: { screen: BlankPage2 },
   Register: { screen: Register },
   NewTrip: { screen: NewTrip },
+  Help: { screen: Help },
+  ViewRequests: { screen: ViewRequests },
   
 }));
