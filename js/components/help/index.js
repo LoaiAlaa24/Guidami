@@ -44,8 +44,9 @@ class Help extends Component {
 
         <Content padder>
           <Text>
-            help...
+            we are here to help you 24/7, for any inquries contact
           </Text>
+          <Text style={{color: 'blue'}}onPress={() => Linking.openURL('https://mail.google.com/')}>mohamedashraf8997@gmailcom</Text>
         </Content>
       </Container>
     );

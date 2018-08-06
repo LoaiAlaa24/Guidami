@@ -93,16 +93,10 @@ class Login extends Component {
     return (
       <Container>
         <View style={styles.container}>
-      <Header style={{height:200 ,backgroundColor: '#216083'}}>
-        <Body >
-        <Image source={background} 
-        style={styles.header}
-        />
-         </Body>
-   </Header>
+      
 
           <Content>
-            
+          <Image source={background} style={styles.header}/>
           
               <View style={styles.in}>
           <Field name="email" component={this.renderInput}  />

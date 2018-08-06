@@ -56,11 +56,11 @@ class BlankPage extends Component {
           </Text>
 
           <Button onPress={() => this.props.navigation.navigate("Login")} style={styles.btnSignIn} >
-          <Text>Sign in</Text>
+          <Text>Log in</Text>
           </Button>
 
           <Button onPress={() => this.props.navigation.navigate("Register")} style={styles.btnSignUp} >
-          <Text>Sign up</Text>
+          <Text>Sign Up</Text>
           </Button>
 
         </Content>

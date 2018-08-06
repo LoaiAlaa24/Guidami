@@ -32,6 +32,7 @@ export default {
   },
   btnBookTrip: {
     justifyContent: 'center',
+    alignSelf:'center',
     position:"absolute",
     width:"50%",
     zIndex:100,

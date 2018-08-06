@@ -44,8 +44,7 @@ width:200,
 height:50,
 backgroundColor:"#ffff",
 borderRadius:10,
-paddingLeft: 10,
-marginLeft:75,
+alignSelf:"center",
 marginBottom:30,
 marginTop:10
 
